@@ -24,4 +24,6 @@ const input = {
 };
 
 const output = JSON.parse(solc.compile(JSON.stringify(input)));
-console.log(output);
+console.log(output.contracts[`LuckyDraw.sol`]["LuckyDraw"]);
+
+module.exports = output.contracts[`LuckyDraw.sol`]["LuckyDraw"];

@@ -1,4 +1,7 @@
 {
+  "scripts":{
+    "compile": "node scripts/compile.js"
+  },
   "dependencies": {
     "solc": "^0.8.13"
   }
