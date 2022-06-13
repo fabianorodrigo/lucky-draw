@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lucky Draw</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="app_bundle.js"></script>
+	<style>
+		.bold{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="lottery_contract_wrapper">
+	    <h1>Lucky Draw</h1>
+	    <p>
+	    	Owner Account Address : <span id="owner_account_address"></span>
+	        <br/><br/>
+	        Total Participants   : <span class="bold" id="total_participants"></span> 
+	        <br/><br/>
+	        The Current Total Prices is : <span class="bold" id="contract_balance"></span>  Ether
+	    </p>
+		<br/>
+	    <div id="findWinnerWrap"> 
+	    </div>
+	    <h2>Register Lucky Draw</h2>
+	    <form id="register_form" action="https://google.com" method="post">
+	        <div>
+	            <label>Register with Amount of Ether</label>
+	            <input type="text" id="ether_amount" />
+	            <span>
+	            	<input type="submit" name="enter_button" value="Enter" id="enter_button">
+	            </span>
+	        	<p id="message"></p>
+	        </div>
+	    </form>    
+	    <br/> 
+	    
+	</div>
+</body>
+</html>
